@@ -4,6 +4,7 @@
 <head>
     <title>Website | Ilya Begalko</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -11,8 +12,8 @@
         <a href="#" class="logo">Logo</a>
         <ul>
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
             <li><a href="#contacts">Contact</a></li>
         </ul>
     </header>
@@ -21,11 +22,12 @@
         <img src="../assets/moon.png" id="moon">
         <img src="../assets/mountains_behind.png" id="mountains_behind">
         <h2 id="text">My Website</h2>
-        <a href="#sec" id="btn">Explore</a>
+        <a href="#about" id="btn">Explore</a>
         <img src="../assets/mountains_front.png" id="mountains_front">
     </section>
-    <div class="sec" id="sec">
-        <h2>Parallax Scrolling Effects</h2>
+
+    <div class="sec" id="about">
+        <h2>About</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Vulputate mi sit amet mauris. Felis donec et odio pellentesque diam volutpat commodo
@@ -56,25 +58,96 @@
         </p>
     </div>
 
+    <div class="sec" id="works">
+        <h2>Works</h2>
+        <div id="swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
 
     <footer id="contacts">
         <ul class="social_icon">
-            <li><a href="https://github.com/Ilya-Begalko"><ion-icon name="logo-github"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/ilbglk/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="https://wa.me/89994537345"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li><a href="https://github.com/Ilya-Begalko">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a></li>
+            <li><a href="https://www.instagram.com/ilbglk/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            <li><a href="https://wa.me/89994537345">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a></li>
         </ul>
         <ul class="footer-menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
             <li><a href="#contacts">Contact</a></li>
         </ul>
         <p>@ 2022 Ilya Begalko</p>
     </footer>
 
+    <!-- Script for slider-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <!--Scripts for footer  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script for scroll-->
     <script>
         let stars = document.getElementById('stars');
         let moon = document.getElementById('moon');
