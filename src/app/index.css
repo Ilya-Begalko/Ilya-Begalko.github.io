@@ -27,8 +27,6 @@ header {
 }
 
 header .logo {
-    /* Скрыть */
-    visibility: hidden;
     color: #fff;
     font-weight: 700;
     text-decoration: none;
@@ -103,10 +101,9 @@ section img#mountains_front {
 
 #text {
     position: absolute;
-    right: -350px;
     color: #fff;
     white-space: nowrap;
-    font-size: 7.5vw;
+    font-size: 4.5vw;
     /* font-size: 1.5em; */
     z-index: 9;
 }
