@@ -1,0 +1,96 @@
+:host {
+  display: block;
+}
+
+.intro {
+  padding: 8px 0 36px;
+}
+
+.role,
+h2 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 32px;
+}
+
+.education {
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.experience,
+.stack {
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  column-gap: 2.5rem;
+  row-gap: 12px;
+  justify-content: start;
+  list-style: none;
+}
+
+.experience li {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  align-items: baseline;
+  font-size: 15px;
+}
+
+.place,
+.period,
+dd {
+  margin: 0;
+}
+
+.period {
+  color: var(--color-text-muted);
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 2rem;
+  row-gap: 12px;
+}
+
+.stack div {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  align-items: baseline;
+}
+
+dt,
+dd {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+dt {
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .experience,
+  .stack {
+    grid-template-columns: 1fr;
+  }
+
+  .experience li,
+  .stack div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

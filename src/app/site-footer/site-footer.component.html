@@ -1,0 +1,25 @@
+<footer ngToolbar orientation="horizontal" [wrap]="true" aria-label="Contacts and image mode">
+  <button
+    ngToolbarWidget
+    type="button"
+    class="switch"
+    role="switch"
+    [attr.aria-checked]="enabled()"
+    [attr.aria-label]="label()"
+    (click)="toggle()"
+  >
+    <span class="switch-track" aria-hidden="true">
+      <span class="switch-thumb" [class.is-on]="enabled()"></span>
+    </span>
+  </button>
+
+  @for (link of socials; track link.href) {
+    @if (link.external) {
+      <a ngToolbarWidget [href]="link.href" target="_blank" rel="noopener noreferrer">
+        {{ link.label }}
+      </a>
+    } @else {
+      <a ngToolbarWidget [href]="link.href">{{ link.label }}</a>
+    }
+  }
+</footer>

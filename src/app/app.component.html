@@ -1,0 +1,33 @@
+<header class="site-header">
+  <h1 lang="ru">{{ profileName }}</h1>
+</header>
+
+<div
+  class="viewport"
+  #viewport
+  [class.is-dragging]="dragging()"
+  (pointerdown)="onPointerDown($event)"
+>
+  <div class="track" [style.transform]="trackTransform()">
+    @for (copy of copies; track copy) {
+      <div class="loop" #loop [attr.aria-hidden]="copy === 1 ? null : true">
+        <app-site-intro />
+
+        <ul class="project-grid">
+          @for (project of projects; track project.id) {
+            <li>
+              <a
+                appProjectCard
+                [project]="project"
+                [negative]="negative()"
+                [tabbable]="copy === 1"
+              ></a>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+</div>
+
+<app-site-footer />
