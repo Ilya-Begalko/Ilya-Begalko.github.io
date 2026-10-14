@@ -68,6 +68,13 @@ export const projects: readonly Project[] = [
     url: 'http://app-guidebook.netlify.app/',
   },
   {
+    id: 'frame-cinema',
+    title: 'FRAME — Cinema Club',
+    category: 'React App',
+    image: 'images/frame-cinema.jpg',
+    url: 'https://ilya-begalko.github.io/frame-cinema/',
+  },
+  {
     id: 'fitness-coach',
     title: 'Fitnes Coach Web Page',
     category: 'Web design',
@@ -85,21 +92,14 @@ export const projects: readonly Project[] = [
     id: 'data-display',
     title: 'Data Display Screens',
     category: 'Angular App',
-    image: 'images/project-7.png',
+    image: 'images/data-display.jpg',
     url: 'https://stunning-vacherin-4d1511.netlify.app/',
-  },
-  {
-    id: 'color-spectrum',
-    title: 'Color Spectrum',
-    category: 'Web App',
-    image: 'images/project-23.png',
-    url: 'https://ilya-begalko.github.io/color-spectrum/',
   },
   {
     id: 'digital-clock',
     title: 'Digital clock',
     category: 'Web App',
-    image: 'images/project-22.png',
+    image: 'images/digital-clock.jpg',
     url: 'https://ilya-begalko.github.io/digital-clock-js/',
   },
   {
@@ -108,20 +108,6 @@ export const projects: readonly Project[] = [
     category: 'Web App',
     image: 'images/project-3.png',
     url: 'https://ilya-begalko.github.io/Vanila-Music-Player/src/app/index.html',
-  },
-  {
-    id: 'weather-app',
-    title: 'Weather app on Angular',
-    category: 'Angular App',
-    image: 'images/project-20.png',
-    url: 'https://master--starlit-pasca-b9a850.netlify.app/',
-  },
-  {
-    id: 'animated-upload-modal',
-    title: 'Animated Upload Modal',
-    category: 'Components',
-    image: 'images/project-21.png',
-    url: 'https://ilya-begalko.github.io/upload-module/',
   },
   {
     id: 'phone-app',
@@ -138,13 +124,6 @@ export const projects: readonly Project[] = [
     url: 'https://ilya-begalko.github.io/animated-periodic-table/',
   },
   {
-    id: 'checkbox-animations',
-    title: 'Checkbox Animations With Indeterminate State',
-    category: 'Components',
-    image: 'images/project-15.png',
-    url: 'https://ilya-begalko.github.io/checkbox-animations/',
-  },
-  {
     id: 'theme-switch',
     title: 'Colorful Theme Switch',
     category: 'Components',
@@ -159,13 +138,6 @@ export const projects: readonly Project[] = [
     url: 'https://ilya-begalko.github.io/futuristic-card-effect/',
   },
   {
-    id: 'activity-notification',
-    title: 'Activity notification panel concept',
-    category: 'Components',
-    image: 'images/project-11.png',
-    url: 'https://ilya-begalko.github.io/activity-notification-panel-concept/',
-  },
-  {
     id: 'whatsapp-clone',
     title: 'WhatsApp Clone on Angular',
     category: 'Angular App',
@@ -178,20 +150,6 @@ export const projects: readonly Project[] = [
     category: 'Web App',
     image: 'images/project-2.png',
     url: 'https://ilya-begalko.github.io/menja-game-js/',
-  },
-  {
-    id: 'direction-aware-hover',
-    title: 'Direction-aware 3D hover effect',
-    category: 'Components',
-    image: 'images/project-14.png',
-    url: 'https://ilya-begalko.github.io/direction-aware-3D-hover-effect/',
-  },
-  {
-    id: 'todo-vue',
-    title: 'To-Do List on Vue',
-    category: 'Vue App',
-    image: 'images/project-4.png',
-    url: 'https://remarkable-rabanadas-370847.netlify.app/',
   },
   {
     id: 'keyboard-hero',

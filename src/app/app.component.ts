@@ -196,6 +196,8 @@ export class App {
     const viewport = this.viewport()?.nativeElement;
     if (!(target instanceof HTMLElement) || !viewport || !target.closest('.loop')) return;
 
+    if (!target.matches(':focus-visible')) return;
+
     const top = target.getBoundingClientRect().top;
     const viewTop = viewport.getBoundingClientRect().top;
     const viewBottom = viewport.getBoundingClientRect().bottom;
