@@ -44,6 +44,9 @@ export class App {
   protected onPointerDown(event: PointerEvent): void {
     if (event.pointerType === 'mouse' || event.button !== 0) return;
 
+    // A touch scroll often never emits a click. Drop the leftover suppression
+    // so the next tap opens the card instead of being swallowed.
+    this.suppressClick = false;
     cancelAnimationFrame(this.frame);
     this.velocity = 0;
     this.pointer = { id: event.pointerId, lastY: event.clientY, moved: 0, queued: 0 };
