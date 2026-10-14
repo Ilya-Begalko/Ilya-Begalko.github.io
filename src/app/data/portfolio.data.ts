@@ -89,6 +89,27 @@ export const projects: readonly Project[] = [
     url: 'https://ilya-begalko.github.io/PromoFilmWebSite.github.io/',
   },
   {
+    id: 'angular-unit-tests',
+    title: 'Angular Unit Tests App',
+    category: 'Angular App',
+    image: 'images/angular-unit-tests.jpg',
+    url: 'https://master--friendly-starship-48cd71.netlify.app/',
+  },
+  {
+    id: 'whatsapp-clone',
+    title: 'WhatsApp Clone on Angular',
+    category: 'Angular App',
+    image: 'images/project-1.png',
+    url: 'https://jolly-sherbet-36f5f0.netlify.app/',
+  },
+  {
+    id: 'phone-app',
+    title: 'Website for phone app',
+    category: 'Web design',
+    image: 'images/project-19.png',
+    url: 'https://ilya-begalko.github.io/Purrweb-TestTask/',
+  },
+  {
     id: 'data-display',
     title: 'Data Display Screens',
     category: 'Angular App',
@@ -108,13 +129,6 @@ export const projects: readonly Project[] = [
     category: 'Web App',
     image: 'images/project-3.png',
     url: 'https://ilya-begalko.github.io/Vanila-Music-Player/src/app/index.html',
-  },
-  {
-    id: 'phone-app',
-    title: 'Website for phone app',
-    category: 'Web design',
-    image: 'images/project-19.png',
-    url: 'https://ilya-begalko.github.io/Purrweb-TestTask/',
   },
   {
     id: 'periodic-table',
@@ -138,13 +152,6 @@ export const projects: readonly Project[] = [
     url: 'https://ilya-begalko.github.io/futuristic-card-effect/',
   },
   {
-    id: 'whatsapp-clone',
-    title: 'WhatsApp Clone on Angular',
-    category: 'Angular App',
-    image: 'images/project-1.png',
-    url: 'https://jolly-sherbet-36f5f0.netlify.app/',
-  },
-  {
     id: 'menja',
     title: 'Game MENJA on JavaScript',
     category: 'Web App',
@@ -157,12 +164,5 @@ export const projects: readonly Project[] = [
     category: 'Web App',
     image: 'images/project-5.png',
     url: 'https://ilya-begalko.github.io/KeyboardHero.github.io/',
-  },
-  {
-    id: 'angular-unit-tests',
-    title: 'Angular Unit Tests App',
-    category: 'Angular App',
-    image: 'images/project-12.png',
-    url: 'https://master--friendly-starship-48cd71.netlify.app/',
   },
 ];
