@@ -134,7 +134,7 @@ export const projects: readonly Project[] = [
     id: 'futuristic-card',
     title: 'Futuristic Card Effect',
     category: 'Components',
-    image: 'images/project-13.png',
+    image: 'images/futuristic-card.jpg',
     url: 'https://ilya-begalko.github.io/futuristic-card-effect/',
   },
   {
