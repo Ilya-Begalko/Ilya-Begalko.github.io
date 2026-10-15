@@ -96,6 +96,13 @@ export const projects: readonly Project[] = [
     url: 'https://master--friendly-starship-48cd71.netlify.app/',
   },
   {
+    id: 'comics-reader',
+    title: 'Comics Reader',
+    category: 'Angular App',
+    image: 'images/comics-reader.jpg',
+    url: 'https://thriving-travesseiro-dcd1f7.netlify.app/',
+  },
+  {
     id: 'whatsapp-clone',
     title: 'WhatsApp Clone on Angular',
     category: 'Angular App',
