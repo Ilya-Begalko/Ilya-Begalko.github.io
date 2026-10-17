@@ -89,6 +89,13 @@ export const projects: readonly Project[] = [
     url: 'https://ilya-begalko.github.io/PromoFilmWebSite.github.io/',
   },
   {
+    id: 'afterhours',
+    title: 'AfterHours',
+    category: 'React App',
+    image: 'images/afterhours.jpg',
+    url: 'http://ilya-begalko.github.io/afterhours_react_app/',
+  },
+  {
     id: 'angular-unit-tests',
     title: 'Angular Unit Tests App',
     category: 'Angular App',
