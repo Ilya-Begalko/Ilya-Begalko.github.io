@@ -63,7 +63,7 @@ export const projects: readonly Project[] = [
   {
     id: 'guidebook',
     title: 'Guidebook App',
-    category: 'Web App',
+    category: 'Angular App',
     image: 'images/guidebook.jpg',
     url: 'http://app-guidebook.netlify.app/',
   },
@@ -73,6 +73,13 @@ export const projects: readonly Project[] = [
     category: 'React App',
     image: 'images/frame-cinema.jpg',
     url: 'https://ilya-begalko.github.io/frame-cinema/',
+  },
+  {
+    id: 'manchester-united',
+    title: 'Manchester United Fan Site',
+    category: 'Vue App',
+    image: 'images/manchester-united.jpg',
+    url: 'https://ilya-begalko.github.io/manchester-united/',
   },
   {
     id: 'fitness-coach',
